@@ -1,0 +1,67 @@
+<!DOCTYPE >
+<!-- saved from url=(0022)http://blog.csdn.net/electroniXtar/ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>SQL添加引号</title>
+	</head>
+
+	<body>
+	<br>
+	<span>SQL添加引号</span>
+	<br>
+	<br>
+	&nbsp;
+	<button type="button" onclick = "onReplaceClean()">&nbsp;&nbsp;清空&nbsp;&nbsp;</button> 
+	<button type="button" onclick = "onReplace()">添加引号</button> 
+	<button type="button" onclick = "onReplaceNextRows()">逗号换行</button> 
+	<button type="button" onclick = "onReplaceClean()">&nbsp;&nbsp;清空&nbsp;&nbsp;</button> 
+	<button type="button" onclick = "onReplaceCleanNullRows()">删除空行</button> 
+	<br>
+	<textarea id = "txts" rows="20" cols="60"></textarea>
+	<br>
+
+</body>
+<script>
+	
+	function onReplaceClean(){
+		document.getElementById("txts").value='';
+	}
+	
+	function onReplaceCleanNullRows(){
+		var str = document.getElementById("txts").value;
+		if(str == '' || str == 'undefined'){
+			return null;
+		}
+		str = str.replace(/\n(\n)*( )*(\n)*\n/g,"\n");
+		document.getElementById("txts").value=str;
+	}
+	
+	function onReplaceNextRows(){
+		var str = document.getElementById("txts").value;
+		if(str == '' || str == 'undefined'){
+			return null;
+		}
+		str=str.replace(/[,\r]/g,'\,\n');
+		str = str + '\r';
+		document.getElementById("txts").value=str;
+		onReplaceCleanNullRows();
+	}
+	
+	function onReplace(){ 
+		var str = document.getElementById("txts").value;
+		if(str == '' || str == 'undefined'){
+			return null;
+		}
+		<!-- 去空行 -->
+		onReplaceCleanNullRows();
+		<!-- 将回车符替换成引号 -->
+		str=str.replace(/[\n\r]/g,'\',\'');
+		<!-- 开头和结尾增加引号-->
+		str = '\''+str+'\'';
+		<!-- 去空格 -->
+		str = str.replace(/\s/g,"");
+		document.getElementById("txts").value=str;
+	}
+</script>
+</html>
