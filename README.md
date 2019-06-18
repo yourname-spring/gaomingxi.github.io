@@ -1,1 +1,4 @@
-# GaoMingxi.github.io
+# Git Hub
+
+### 主要事件记录
+*	2019年6月18日创建仓
