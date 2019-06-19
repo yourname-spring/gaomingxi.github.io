@@ -28,7 +28,6 @@
             } else {// code for IE6, IE5
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             return xmlhttp;
         }
 
@@ -45,6 +44,7 @@
             }
             var xmlhttp = createXmlHttp();
             xmlhttp.open("GET", url + "/" + product_code + "/" + customer_code, false);
+            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send();
             // 记录查询结果
             document.getElementById("txts").value = xmlhttp.responseText;
