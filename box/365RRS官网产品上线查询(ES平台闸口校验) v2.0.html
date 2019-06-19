@@ -28,7 +28,7 @@
             } else {// code for IE6, IE5
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             return xmlhttp;
         }
 
