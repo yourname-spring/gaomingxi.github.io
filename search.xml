@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>如何将hexo博客源码托管GitHub</title>
+      <link href="/2020/07/12/%E5%A6%82%E4%BD%95%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E6%89%98%E7%AE%A1GitHub/"/>
+      <url>/2020/07/12/%E5%A6%82%E4%BD%95%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E6%89%98%E7%AE%A1GitHub/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>如何将Hexo搭建的博客源码托管Git，方法也挺简单的，有几个有几个地方注意下即可</p><ul><li>创建一个新的github仓库并clon到本地</li><li>将HEXO源码复制到刚才clon到本地文件夹</li><li>上传github</li><li><strong>如何在另一台电脑上写作</strong></li></ul></blockquote><h1 id="创建一个新的GitHub仓库"><a href="#创建一个新的GitHub仓库" class="headerlink" title="创建一个新的GitHub仓库"></a>创建一个新的GitHub仓库</h1><p>相对比较简单的一个操作，直接在GitHub上操作即可，略过</p><h1 id="复制代码"><a href="#复制代码" class="headerlink" title="复制代码"></a>复制代码</h1><p> 将本地的源码，复制到刚才clone到本地的文件夹中；如果源文件中有.git文件，不要复制.git文件夹</p><p> <strong>源文件夹</strong><br> <img src="https://picgo-blog.oss-cn-beijing.aliyuncs.com/img/hexo/Snipaste_2020-07-13_00-08-19.png" alt="源文件夹"></p><p><strong>复制下图中选中的文件即可</strong><br> <img src="https://picgo-blog.oss-cn-beijing.aliyuncs.com/img/hexo/Snipaste_2020-07-13_00-10-48.png" alt="需要复制的文件"></p><p><strong>复制到新文件夹</strong><br> <img src="https://picgo-blog.oss-cn-beijing.aliyuncs.com/img/hexo/Snipaste_2020-07-13_00-13-55.png" alt="新文件夹"></p><h1 id="上传github"><a href="#上传github" class="headerlink" title="上传github"></a>上传github</h1><p>  已经完成源文件的迁移，下面将文件文件提交GitHub<br> <img src="https://picgo-blog.oss-cn-beijing.aliyuncs.com/img/hexo/Snipaste_2020-07-13_00-17-02.png" alt="push"></p><p> <img src="https://picgo-blog.oss-cn-beijing.aliyuncs.com/img/hexo/Snipaste_2020-07-13_00-19-33.png" alt="GitHub"></p><h1 id="如何在另一台电脑上写作"><a href="#如何在另一台电脑上写作" class="headerlink" title="如何在另一台电脑上写作"></a>如何在另一台电脑上写作</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>终端工具，替代xshell</title>
       <link href="/2020/06/18/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%9B%BF%E4%BB%A3xshell/"/>
       <url>/2020/06/18/%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%9B%BF%E4%BB%A3xshell/</url>
